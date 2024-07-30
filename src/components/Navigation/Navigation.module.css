@@ -1,0 +1,56 @@
+.header {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    padding: 15px;
+    background-color: #1b1b1bd5;
+}
+  
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+  
+.link {
+    padding: 4px 16px;
+    border-radius: 15px;
+  
+    font-size: 22px;
+    color: #d5717e;
+    transition: border 250ms ease-in, background-color 250ms ease-in,
+      color 250ms ease-in;
+}
+  
+.isActive {
+    color: #71bcd5;
+    background-color: #4f4f4f;
+}
+  
+.link:hover,
+.link:focus {
+    color: #d13e52;
+}
+  
+.isActive:hover,
+.isActive:focus {
+    color: #33aad2;
+}
+  
+@media screen and (max-width: 767px) {
+    .header {
+      padding: 20px 0 20px 0;
+    }
+  
+    .nav {
+      gap: 20px;
+    }
+  
+    .link {
+      font-size: 18px;
+    }
+}

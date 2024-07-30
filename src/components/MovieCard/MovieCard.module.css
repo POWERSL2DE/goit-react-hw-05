@@ -1,0 +1,15 @@
+.rating {
+    display: inline;
+  
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+  
+    padding: 1px 8px;
+    border: 2px dashed #eb6363;
+    border-radius: 15px;
+  
+    background-clip: padding-box;
+    background-color: #92cdfa;
+    font-size: 18px;
+}

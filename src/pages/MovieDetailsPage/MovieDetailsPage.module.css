@@ -1,0 +1,146 @@
+.wrapper {
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+  
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  
+    position: fixed;
+    top: 110px;
+    left: 34px;
+  
+    max-width: 100px;
+    padding: 8px 16px;
+    border: 1px solid #252525;
+    border-radius: 15px;
+  
+    color: rgb(81, 81, 81);
+    font-size: 18px;
+    background-color: #f9f9f9;
+    transition: border 250ms ease-in, background-color 250ms ease-in,
+      color 250ms ease-in;
+}
+  
+.container {
+    display: flex;
+    gap: 36px;
+}
+  
+.image {
+    width: 320px;
+    padding: 8px;
+    border: 1px dashed #252525;
+    border-radius: 15px;
+}
+  
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  
+    text-align: justify;
+}
+  
+.text {
+    text-align: center;
+}
+  
+.span {
+    font-weight: 600;
+}
+  
+.sabpages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+  
+.navLink {
+    padding: 8px 16px;
+    border: 1px solid #7e7e7e;
+    border-radius: 15px;
+  
+    color: #2e2e2e;
+    background-color: #f9f9f9;
+    transition: border 250ms ease-in, background-color 250ms ease-in;
+}
+  
+  .isActive {
+    background-color: #c7c7c7;
+}
+  
+.navLink:hover,
+.navLink:focus,
+.link:hover,
+.link:focus {
+    color: #2e2e2e;
+    border: 1px solid #2e2e2e;
+}
+  
+@media screen and (max-width: 1279px) {
+    .wrapper {
+      margin-top: 100px;
+    }
+  
+    .link {
+      top: 82px;
+      left: 34px;
+    }
+  
+    .image {
+      width: 200px;
+      height: 300px;
+      object-fit: contain;
+    }
+}
+  
+@media screen and (max-width: 1023px) {
+    .wrapper {
+      padding: 30px 20px;
+    }
+  
+    .container {
+      display: block;
+      padding: 0px 50px 0px;
+    }
+  
+    .image {
+      width: 260px;
+      height: 100%;
+      margin: 0 auto 20px auto;
+      object-fit: contain;
+    }
+}
+  
+@media screen and (max-width: 767px) {
+    .container {
+      padding: 0px 20px 0px;
+    }
+}
+  
+@media screen and (max-width: 424px) {
+    .wrapper {
+      padding: 20px 10px;
+    }
+  
+    .container {
+      padding: 0px 10px 0px;
+    }
+  
+    .link {
+      top: 82px;
+      left: 10px;
+      font-size: 14px;
+    }
+  
+    .image {
+      width: 210px;
+    }
+}

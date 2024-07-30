@@ -1,0 +1,51 @@
+.container {
+    padding: 40px 0;
+    background-color: #e4f6f8;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+  
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+  
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+  
+    width: 217px;
+    height: 375px;
+    padding: 8px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+  
+    background-color: #f9f9f9;
+    text-align: center;
+  
+}
+  
+.image {
+    width: 200px;
+    margin: 0 auto;
+}
+  
+.text {
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+  
+.cast {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

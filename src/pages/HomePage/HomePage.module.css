@@ -1,0 +1,13 @@
+.title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+  
+@media screen and (max-width: 1279px) {
+    .title {
+      margin-top: 100px;
+    }
+}
