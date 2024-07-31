@@ -21,7 +21,7 @@ export default function App() {
       <Navigation />
 
       <div className={css.container}>
-        <Suspense fullback={<Loader />}>
+        <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/movies" element={<MoviesPage />} />

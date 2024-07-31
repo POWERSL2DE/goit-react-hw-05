@@ -6,14 +6,14 @@ export default function SearchBar() {
   const queryFilter = params.get('query') ?? '';
 
   const changeMovieFilter = newFilter => {
-    params.set('query', newFilter.trim());
-    setParams(params);
+       params.set('query', newFilter.trim());
+       setParams(params);
   };
 
   const hundleSubmit = e => {
     e.preventDefault();
-    const form = e.target;
-
+    const form = e.target.search.value.trim();
+    
     form.reset();
   };
 
@@ -33,6 +33,7 @@ export default function SearchBar() {
             autoFocus
             placeholder="Enter the movie title"
             value={queryFilter}
+            defaultValue={queryFilter}
             onChange={e => changeMovieFilter(e.target.value)}
           />
         </label>

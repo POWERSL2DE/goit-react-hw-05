@@ -125,7 +125,7 @@ export default function MovieDetailsPage() {
         </div>
       </div>
 
-      <Suspense fullback={<Loader />}>
+      <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
 
