@@ -37,8 +37,28 @@
     font-size: 16px;
 }
   
+.searchButton {
+    color: #ff6868;
+    background-color: #242424;
+    border-radius: 16px;
+    font-size: 16px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchButton:hover,
+.searchButton:focus,
+.searchButton:active {
+    background-color: #c7c7c7;
+    color: #71bcd5;
+    transition: border 250ms ease-in, background-color 250ms ease-in, color 250ms ease-in;
+}
+
 @media screen and (max-width: 1023px) {
     .input {
       width: 65vw;
     }
 }
+
